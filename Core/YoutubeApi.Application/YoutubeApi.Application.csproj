@@ -7,11 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\YoutubeApi.Domain\YoutubeApi.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Products\Command\" />
+    <Folder Include="Features\Products\Exceptions\" />
+    <Folder Include="Features\Products\Rules\" />
   </ItemGroup>
 
 </Project>
